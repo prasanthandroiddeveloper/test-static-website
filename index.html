@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+        input{
+            margin-top: 10px;  
+            width: 250px;
+           
+        }
+        div{
+            background-color: brown;
+            text-align: center;
+            width: 50%;
+            margin:auto
+        }
+    </style>
+    </head>
+    <body>
+
+        <div>
+            <form onsubmit="validate()">
+                
+                <input type="text" placeholder="username" id="username"><br>
+                <input type="text" placeholder="password" id="password"><br>
+
+               
+                <input type="submit" value="login">
+               
+
+
+                
+            </form>
+        </div>
+
+        <script>
+
+            function validate(){
+            var username=document.getElementById("username").value
+            var password=document.getElementById("password").value
+
+            if(username=="javascript" && password=="js123"){
+                alert("Login Successfull")
+            }else{
+                alert("Invalid credentials")
+            }
+
+            }
+        </script>
+
+    </body>
+</html>
